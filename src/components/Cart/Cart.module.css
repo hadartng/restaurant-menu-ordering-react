@@ -1,0 +1,89 @@
+/* START - cart widget for header */
+.cart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 263px 0 0 325px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.cart .amount-container {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #9c27b0;
+}
+
+.cart .total-amount {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+/* END - cart widget for header */
+
+h2.cart-title {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+}
+
+.cart-actions button.cart-close, .cart-actions button.cart-order {
+    color: #9c27b0;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.cart-actions .cart-sum {
+    position: absolute;
+    left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #000;
+}
+
+.cart-actions.empty .cart-sum, .cart-actions.empty button.cart-order {
+    visibility: hidden;
+}
+
+.cart-dialog .cart-content {
+    padding: 0 50px;
+}
+
+/* START - dialog scroll design */
+.cart-dialog ::-webkit-scrollbar {
+    width: 10px;
+}
+
+.cart-dialog ::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.cart-dialog ::-webkit-scrollbar-thumb {
+    background: #9c27b0;
+    border-radius: 10px;
+}
+
+.cart-dialog ::-webkit-scrollbar-thumb:hover {
+    background: #6a1c77;
+}
+
+.cart .cart-actions {
+    position: relative;
+}
+
+/* END - dialog scroll design */

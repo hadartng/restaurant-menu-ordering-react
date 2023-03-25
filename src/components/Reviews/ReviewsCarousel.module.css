@@ -1,0 +1,79 @@
+/* Carousel container */
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 20px 0;
+    direction: rtl;
+}
+
+/* Review container */
+.review {
+    position: relative;
+    background-color: rgba(86, 22, 98, 0.03);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    width: 500px;
+}
+
+.review h2 {
+    font-size: 12px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.review p {
+    font-size: 11px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.review .score {
+    vertical-align: center;
+    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
+    top: 10px;
+    left: 12px;
+    color: #9c27b0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.review .score span::before, .review .score span::after {
+    content: "★";
+}
+
+/* Animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Reviews */
+.carousel .review {
+    flex-shrink: 0;
+    flex-grow: 1;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+/* Duplicate reviews */
+.carousel .review.duplicate {
+    flex-shrink: 0;
+    flex-grow: 1;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+/* Animation for original reviews */
+.carousel:not(:hover) .review:not(.duplicate) {
+    animation: slide 10s linear infinite;
+}
+
+/* Animation for duplicate reviews */
+.carousel:hover .review.duplicate {
+    animation: none;
+}

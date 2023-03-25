@@ -1,0 +1,25 @@
+.header {
+    height: 300px;
+    margin: 0 0 60px 0;
+    float: left;
+    width: 100%;
+    background-image: url("../assets/burger.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header-logo {
+    width: 305px;
+    height: 60px;
+    float: left;
+    background-image: url("../assets/marlen_logo.jpg");
+    background-repeat: no-repeat;
+    background-size: 305px;
+    margin: 240px 0 0 0;
+}
