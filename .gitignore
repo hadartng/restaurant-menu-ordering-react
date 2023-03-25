@@ -1,0 +1,27 @@
+# Ignore build output
+build/
+dist/
+out/
+*.log
+*.zip
+
+# Ignore dependencies
+node_modules/
+
+# Package-lock.json file
+package-lock.json
+
+# Ignore configuration files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+*.swo
+.idea/
