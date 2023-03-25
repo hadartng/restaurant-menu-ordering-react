@@ -25,3 +25,6 @@ Thumbs.db
 *.swp
 *.swo
 .idea/
+
+# Ignore README.md file (can sometimes be change due to IDE formatter)
+README.md
