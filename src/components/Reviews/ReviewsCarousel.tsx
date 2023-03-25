@@ -1,5 +1,5 @@
 import styles from "./ReviewsCarousel.module.css";
-import reviews from './reviewsItems';
+import reviews from './utils/reviewsItems';
 
 function ReviewsCarousel() {
     return (
