@@ -5,7 +5,7 @@ function CategoryContainer(props: any) {
     const category: Category = props.category;
 
     return (
-        <div key={category.id} className={styles.category}>
+        <div className={styles.category}>
             <h2 className={styles.categoryTitle}>{category.name}</h2>
             <div className={styles.dishes}>
                 {props.children}

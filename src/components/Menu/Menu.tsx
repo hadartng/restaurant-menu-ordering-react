@@ -37,7 +37,7 @@ function Menu() {
     return (
         <section className={styles.menu}>
             {categories.map((category) => (
-                <CategoryContainer category={category}>
+                <CategoryContainer key={category.id} category={category}>
 
                     {category.dishes.map((dish) => (
                         <DishItem key={dish.id} dish={dish} buttonAction={() => handleAddToCart(dish)}
