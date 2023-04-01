@@ -2,6 +2,8 @@
 
 This is a small test project built with React 18, TypeScript, Redux Toolkit, Axios and CSS Modules. Some additional libraries are used for exploration purposes (e.g. MUI). The app utilizes an API to fetch data about a restaurant menu and partially builds an ordering app.
 
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/128438624/229261319-121e8488-c6a2-49ae-bda4-42924abc478e.png">
+
 ## Features
 
 - Fetches data from a restaurant menu API
@@ -34,8 +36,7 @@ This is a small test project built with React 18, TypeScript, Redux Toolkit, Axi
 
 ## Work In Progress
 - You'll notice a placeholder for fetching restaurant reviews and some partial styling. You're welcome to ignore it for now as it's still WIP.
-- The order mechanism is also WIP. While the UI and state management are in good shape - there's still no checkout and/or connection to a real database.
-- Same regarding routing and other features.
+- The order mechanism is also WIP. While the UI and state management are in good shape - there's still no checkout and/or connection to a real database. Same regarding routing and other features.
 
 ## Credits
 
