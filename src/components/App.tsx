@@ -12,7 +12,7 @@ function App() {
             <div className={styles.app}>
                 <Header/>
                 <Menu/>
-                <Reviews/>
+                {/*<Reviews/>*/}
             </div>
         </Provider>
     );
