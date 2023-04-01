@@ -1,8 +1,7 @@
 import Header from "./Header/Header";
 import Menu from "./Menu/Menu";
-import Reviews from "./Reviews/Reviews";
+//import Reviews from "./Reviews/Reviews";
 import styles from "./App.module.css";
-// import store and provider
 import {Provider} from "react-redux";
 import store from "../features/store";
 
