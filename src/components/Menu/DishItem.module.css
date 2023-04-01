@@ -51,12 +51,12 @@
 }
 
 .dish .dishDescription::-webkit-scrollbar-thumb {
-    background: #9c27b0;
+    background: #0C4160;
     border-radius: 8px;
 }
 
 .dish .dishDescription::-webkit-scrollbar-thumb:hover {
-    background: #6a1c77;
+    background: #071330;
 }
 
 .dishPrice {
@@ -71,7 +71,7 @@
     font-size: 14px;
     padding: 8px 16px;
     margin: 0 auto;
-    background-color: #9c27b0;
+    background-color: #0C4160;
     border: none;
     border-radius: 8px;
     color: #fff;
@@ -81,5 +81,5 @@
 }
 
 .dishButton:hover {
-    background-color: #6a1c77;
+    background-color: #071330;
 }

@@ -20,7 +20,7 @@ h2.cartTitle, button.cartClose, button.cartOrder, .cartSum, .totalAmount {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #9c27b0;
+    background-color: #0C4160;
 }
 
 .cart .totalAmount {
@@ -93,11 +93,11 @@ h2.cartTitle, button.cartClose, button.cartOrder, .cartSum, .totalAmount {
     cursor: pointer;
     border: none;
     color: #fff;
-    background-color: #9c27b0;
+    background-color: #0C4160;
 }
 
 .cartOrder:hover, .cartClose:hover {
-    background-color: #6a1c77;
+    background-color: #071330;
 }
 
 .cartModal ::-webkit-scrollbar {
@@ -106,10 +106,6 @@ h2.cartTitle, button.cartClose, button.cartOrder, .cartSum, .totalAmount {
 }
 
 .cartModal ::-webkit-scrollbar-thumb {
-    background-color: #9c27b0;
+    background-color: #071330;
     border-radius: 8px;
-}
-
-.cartModal ::-webkit-scrollbar-thumb:hover {
-    background-color: #6a1c77;
 }
