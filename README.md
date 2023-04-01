@@ -1,5 +1,3 @@
-<img width="220" align="right" alt="image" src="https://user-images.githubusercontent.com/128438624/229262566-1984746c-4f20-45d8-a83d-d3fe3f70d891.png">
-
 # Restaurant Menu Ordering App
 
 This is a small test project built with React 18, TypeScript, Redux Toolkit, Axios and CSS Modules. Some additional libraries are used for exploration purposes (e.g. MUI). The app utilizes an API to fetch data about a restaurant menu and partially builds an ordering app.
@@ -10,6 +8,8 @@ This is a small test project built with React 18, TypeScript, Redux Toolkit, Axi
 - Displays the menu items in a visually appealing way
 - Allows the user to add items to their cart
 - Calculates the total price of the items in the cart
+- [Current design (open & enlarge)](https://user-images.githubusercontent.com/128438624/229262566-1984746c-4f20-45d8-a83d-d3fe3f70d891.png)
+
 
 ## Installation
 
