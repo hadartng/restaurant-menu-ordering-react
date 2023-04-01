@@ -1,4 +1,4 @@
-<img width="300" align="right" alt="image" src="https://user-images.githubusercontent.com/128438624/229261804-2fbc47ff-d551-4d59-a185-3ae4dd0eb0ca.png">
+<img width="250" align="right" alt="image" src="https://user-images.githubusercontent.com/128438624/229261804-2fbc47ff-d551-4d59-a185-3ae4dd0eb0ca.png">
 
 # Restaurant Menu Ordering App
 
