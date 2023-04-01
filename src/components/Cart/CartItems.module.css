@@ -1,12 +1,13 @@
-.cart-item {
+.cartItem {
     position: relative;
     margin: 0 0 10px 0;
 }
-.cart-item:last-child {
+
+.cartItem:last-child {
     margin: 0;
 }
 
-.cart-item-quantity {
+.cartItemQuantity {
     position: absolute;
     left: 8px;
     top: 8px;
@@ -23,16 +24,16 @@
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.cart-item img:hover {
+.cartItemImg:hover {
     transform: none;
 }
 
 @media screen {
-    .cart-dish.dish {
+    .cartDish.dish {
         width: calc((100% / 1) - 20px);
     }
 
-    .cart-dish.dish .dishDescription {
+    .cartDish.dish .dishDescription {
         height: 40px;
     }
 }

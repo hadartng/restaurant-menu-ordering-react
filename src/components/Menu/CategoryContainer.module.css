@@ -16,7 +16,6 @@
     justify-content: left;
 }
 
-/* START - handling responsiveness */
 @media screen and (max-width: 1400px) {
     .dishes > div {
         width: calc((100% / 4) - 20px);
@@ -40,5 +39,3 @@
         width: calc((100% / 1) - 20px);
     }
 }
-
-/* END - handling responsiveness */

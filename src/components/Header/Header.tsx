@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 function Header() {
     return (
         <section className={styles.header}>
-            <div className={styles['header-logo']}/>
+            <div className={styles.headerLogo}/>
             <Cart/>
         </section>
     );

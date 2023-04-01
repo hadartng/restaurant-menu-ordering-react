@@ -14,8 +14,8 @@ function CartItems({items}: { items: CartItem[] }) {
     return (
         <>
             {items.map((item: any) => (
-                <div className={styles["cart-item"]}>
-                    <div className={styles["cart-item-quantity"]}>
+                <div className={styles.cartItem}>
+                    <div className={styles.cartItemQuantity}>
                         {item.quantity}
                     </div>
                     <DishItem dish={item.dish} quantity={item.quantity}

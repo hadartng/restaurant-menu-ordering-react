@@ -15,19 +15,19 @@ function Cart() {
     };
 
     const dialog = (
-        <div className={styles["cart-backdrop"]} onClick={() => handleCartVisibility(false)}>
-            <div className={styles["cart-modal"]} onClick={(e) => e.stopPropagation()}>
-                <div className={styles["cart-header"]}>
-                    <h2 className={styles["cart-title"]}>
+        <div className={styles.cartBackdrop} onClick={() => handleCartVisibility(false)}>
+            <div className={styles.cartModal} onClick={(e) => e.stopPropagation()}>
+                <div className={styles.cartHeader}>
+                    <h2 className={styles.cartTitle}>
                         {cart.items.length === 0 ? "Your cart is empty" : "Your selected items"}
                     </h2>
-                    <button className={styles["cart-close"]} onClick={() => handleCartVisibility(false)}>×</button>
+                    <button className={styles.cartClose} onClick={() => handleCartVisibility(false)}>×</button>
                 </div>
-                <div className={styles["cart-content"]}>{<CartItems items={cart.items}/>}</div>
+                <div className={styles.cartContent}>{<CartItems items={cart.items}/>}</div>
                 {cart.totalQuantity > 0 && (
-                    <div className={styles["cart-footer"]}>
-                        <div className={styles["cart-sum"]}>Total price: {cart.totalPrice}₪</div>
-                        {cart.totalQuantity > 0 && <button className={styles["cart-order"]}>Order</button>}
+                    <div className={styles.cartFooter}>
+                        <div className={styles.cartSum}>Total price: {cart.totalPrice}₪</div>
+                        {cart.totalQuantity > 0 && <button className={styles.cartOrder}>Order</button>}
                     </div>
                 )}
             </div>
@@ -36,10 +36,10 @@ function Cart() {
 
     return (
         <>
-            <div className={styles["cart"]} onClick={() => handleCartVisibility(true)}>
+            <div className={styles.cart} onClick={() => handleCartVisibility(true)}>
                 <CartIcon/>
-                <div className={styles["amount-container"]}>
-                    <div className={styles["total-amount"]}>{cart.totalQuantity}</div>
+                <div className={styles.amountContainer}>
+                    <div className={styles.totalAmount}>{cart.totalQuantity}</div>
                 </div>
             </div>
             {cart.cartOpen ? createPortal(dialog, document.body) : null}

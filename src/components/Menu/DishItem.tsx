@@ -20,7 +20,7 @@ function DishItem(props: any) {
                 <h3 className={styles.dishTitle}>{dish.name}</h3>
                 <p className={styles.dishDescription}>{dish.description}</p>
                 <div className={styles.dishPrice}>₪{`${dish.price.toFixed(2)}`}</div>
-                <button className={styles.addButton} onClick={props.buttonAction}>{props.buttonText}</button>
+                <button className={styles.dishButton} onClick={props.buttonAction}>{props.buttonText}</button>
             </div>
         </div>
     );

@@ -42,25 +42,22 @@
     overflow-x: hidden;
 }
 
-/* START - dish description scroll design */
 .dish .dishDescription::-webkit-scrollbar {
     width: 4px;
 }
 
 .dish .dishDescription::-webkit-scrollbar-track {
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .dish .dishDescription::-webkit-scrollbar-thumb {
     background: #9c27b0;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .dish .dishDescription::-webkit-scrollbar-thumb:hover {
     background: #6a1c77;
 }
-
-/* END - dish description scroll design */
 
 .dishPrice {
     font-size: 16px;
@@ -69,7 +66,7 @@
     margin: 0 0 10px 0;
 }
 
-.addButton {
+.dishButton {
     align-self: flex-end;
     font-size: 14px;
     padding: 8px 16px;
@@ -83,6 +80,6 @@
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.addButton:hover {
+.dishButton:hover {
     background-color: #6a1c77;
 }

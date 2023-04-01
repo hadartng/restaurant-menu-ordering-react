@@ -1,9 +1,8 @@
-h2.cart-title, button.cart-close, button.cart-order, .cart-sum, .total-amount {
+h2.cartTitle, button.cartClose, button.cartOrder, .cartSum, .totalAmount {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/* Cart widget for header */
 .cart {
     position: relative;
     width: 40px;
@@ -14,7 +13,7 @@ h2.cart-title, button.cart-close, button.cart-order, .cart-sum, .total-amount {
     justify-content: center;
 }
 
-.cart .amount-container {
+.cart .amountContainer {
     position: absolute;
     top: 20px;
     right: -10px;
@@ -24,7 +23,7 @@ h2.cart-title, button.cart-close, button.cart-order, .cart-sum, .total-amount {
     background-color: #9c27b0;
 }
 
-.cart .total-amount {
+.cart .totalAmount {
     margin: 0 auto;
     text-align: center;
     width: 100%;
@@ -34,9 +33,7 @@ h2.cart-title, button.cart-close, button.cart-order, .cart-sum, .total-amount {
     font-size: 12px;
 }
 
-/* Cart dialog */
-
-.cart-backdrop {
+.cartBackdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -48,7 +45,7 @@ h2.cart-title, button.cart-close, button.cart-order, .cart-sum, .total-amount {
     align-items: center;
 }
 
-.cart-modal {
+.cartModal {
     position: relative;
     background-color: #fff;
     padding: 0 15px;
@@ -57,38 +54,38 @@ h2.cart-title, button.cart-close, button.cart-order, .cart-sum, .total-amount {
     min-width: 285px;
 }
 
-.cart-header {
+.cartHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
 }
 
-.cart-title {
+.cartTitle {
     font-size: 24px;
     font-weight: bold;
     margin: 0;
 }
 
-.cart-content {
+.cartContent {
     max-height: 600px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-.cart-sum {
+.cartSum {
     font-size: 18px;
     font-weight: bold;
 }
 
-.cart-footer {
+.cartFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
 }
 
-.cart-order, .cart-close {
+.cartOrder, .cartClose {
     font-size: 14px;
     font-weight: bold;
     padding: 8px 16px;
@@ -99,20 +96,20 @@ h2.cart-title, button.cart-close, button.cart-order, .cart-sum, .total-amount {
     background-color: #9c27b0;
 }
 
-.cart-order:hover, .cart-close:hover {
+.cartOrder:hover, .cartClose:hover {
     background-color: #6a1c77;
 }
 
-.cart-modal ::-webkit-scrollbar {
+.cartModal ::-webkit-scrollbar {
     width: 8px;
     border-radius: 8px;
 }
 
-.cart-modal ::-webkit-scrollbar-thumb {
+.cartModal ::-webkit-scrollbar-thumb {
     background-color: #9c27b0;
     border-radius: 8px;
 }
 
-.cart-modal ::-webkit-scrollbar-thumb:hover {
+.cartModal ::-webkit-scrollbar-thumb:hover {
     background-color: #6a1c77;
 }
