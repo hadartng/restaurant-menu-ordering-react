@@ -1,14 +1,10 @@
+import styles from "./Cart.module.css";
 import CartItems from "./CartItems";
 import {RootState} from "../../features/store";
 import {CartIcon} from "../assets/icons";
 import {useDispatch, useSelector} from "react-redux";
 import {cartOpen} from "../../features/reducers/cartSlice";
-import styles from "./Cart.module.css";
-import Button from "@mui/material/Button";
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
+import {createPortal} from "react-dom";
 
 function Cart() {
     const cart = useSelector((state: RootState) => state.cart);
@@ -19,25 +15,23 @@ function Cart() {
     };
 
     const dialog = (
-        <Dialog className={styles["cart-dialog"]} open={cart.cartOpen} onClose={() => handleCartVisibility(false)}>
-            <DialogTitle className={styles["cart-title"]}>
-                {cart.items.length === 0 ? "Your cart is empty" : "Your selected items"}
-            </DialogTitle>
-            <DialogContent className={styles["cart-content"]}>{<CartItems items={cart.items}/>}</DialogContent>
-            <DialogActions
-                className={styles["cart-actions"]}>
-                {cart.totalQuantity > 0 && <div className={styles["cart-sum"]}>
-                    Total price: {cart.totalPrice}₪
-                </div>}
-                <Button
-                    className={styles["cart-close"]}
-                    onClick={() => handleCartVisibility(false)}
-                >
-                    Close
-                </Button>
-                {cart.totalQuantity > 0 && <Button className={styles["cart-order"]}>Order</Button>}
-            </DialogActions>
-        </Dialog>
+        <div className={styles["cart-backdrop"]} onClick={() => handleCartVisibility(false)}>
+            <div className={styles["cart-modal"]} onClick={(e) => e.stopPropagation()}>
+                <div className={styles["cart-header"]}>
+                    <h2 className={styles["cart-title"]}>
+                        {cart.items.length === 0 ? "Your cart is empty" : "Your selected items"}
+                    </h2>
+                    <button className={styles["cart-close"]} onClick={() => handleCartVisibility(false)}>×</button>
+                </div>
+                <div className={styles["cart-content"]}>{<CartItems items={cart.items}/>}</div>
+                {cart.totalQuantity > 0 && (
+                    <div className={styles["cart-footer"]}>
+                        <div className={styles["cart-sum"]}>Total price: {cart.totalPrice}₪</div>
+                        {cart.totalQuantity > 0 && <button className={styles["cart-order"]}>Order</button>}
+                    </div>
+                )}
+            </div>
+        </div>
     );
 
     return (
@@ -48,7 +42,7 @@ function Cart() {
                     <div className={styles["total-amount"]}>{cart.totalQuantity}</div>
                 </div>
             </div>
-            {dialog}
+            {cart.cartOpen ? createPortal(dialog, document.body) : null}
         </>
     );
 }

@@ -1,6 +1,9 @@
 .cart-item {
     position: relative;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
+}
+.cart-item:last-child {
+    margin: 0;
 }
 
 .cart-item-quantity {
@@ -15,7 +18,6 @@
     height: 30px;
     line-height: 30px;
     text-align: center;
-    cursor: pointer;
     font-size: 14px;
     font-weight: bold;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
